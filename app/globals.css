@@ -4,4 +4,5 @@
   box-sizing: border-box;
   color: #393424;
   font-family: var(--font-geist-sans);
+  text-decoration: none;
 }

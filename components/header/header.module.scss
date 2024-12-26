@@ -1,11 +1,24 @@
 .container {
-  background: #A6EBC9;
-  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
   padding: 1em 1.5rem;
 }
 
-.logo {
-  width: auto;
-  height: 3rem;
-  filter: invert(1);
+.left {
+  font-size: 1.25rem;
+}
+
+.center {
+  display: flex;
+  gap: 2em;
+}
+
+.right {
+  .cta {
+    background: #000;
+    color: #fff;
+    padding: .5em .75em;
+    border-radius: 100em;
+  }
 }
