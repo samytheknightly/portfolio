@@ -1,9 +1,16 @@
+"use client";
 import styles from "./header.module.scss";
 import Link from "next/link";
+import PaddedContainer from "../padded-container/PaddedContainer";
+import useScrollPos from "@/hooks/useScrollPos";
 
 const Header = () => {
+  const scrollPos = useScrollPos();
+
   return (
-    <div className={styles.container}>
+    <PaddedContainer containerClassName={[styles.container,
+    scrollPos > 0 ? styles.scrolled : ""].join(" ")}
+      className={styles.content}>
       <Link className={styles.left} href="/">Samy Sabi Webdesign</Link>
 
       <div className={styles.center}>
@@ -15,7 +22,7 @@ const Header = () => {
       <div className={styles.right}>
         <Link className={styles.cta} href="/kontakt">Kontakt aufnehmen</Link>
       </div>
-    </div>
+    </PaddedContainer>
   );
 };
 

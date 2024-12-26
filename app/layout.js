@@ -13,7 +13,7 @@ const geistMono = Geist_Mono({
 });
 
 export const metadata = {
-  title: "Webdesign | Samy Sabi",
+  title: "Samy Sabi Webdesign | Home",
   description: "Servus, ich bin Samy und ich kann dir eine Website erstellen, die sofort das Vertrauen deiner Kunden gewinnt.",
 };
 

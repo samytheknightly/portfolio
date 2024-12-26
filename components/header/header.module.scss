@@ -1,8 +1,21 @@
 .container {
+  position: sticky;
+  top: 0;
+  left: 0;
+  width: 100%;
+  transition: .1s;
+}
+
+.content {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  padding: 1em 1.5rem;
+  padding: 1em 0;
+}
+
+.scrolled {
+  background: #fff;
+  color: #000;
 }
 
 .left {
