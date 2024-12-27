@@ -1,8 +1,15 @@
+:root {
+  --dark-color: #020202;
+  --light-color: #fdfdfd;
+
+  color: var(--black-text);
+}
+
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  color: #393424;
+  color: inherit;
   font-family: var(--font-geist-sans);
   text-decoration: none;
 }

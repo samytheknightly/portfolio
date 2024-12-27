@@ -2,6 +2,7 @@
 import styles from "./header.module.scss";
 import Link from "next/link";
 import PaddedContainer from "../padded-container/PaddedContainer";
+import CTA from "../cta/CTA";
 import useScrollPos from "@/hooks/useScrollPos";
 
 const Header = () => {
@@ -20,7 +21,7 @@ const Header = () => {
       </div>
 
       <div className={styles.right}>
-        <Link className={styles.cta} href="/kontakt">Kontakt aufnehmen</Link>
+        <CTA />
       </div>
     </PaddedContainer>
   );

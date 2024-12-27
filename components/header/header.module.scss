@@ -14,8 +14,8 @@
 }
 
 .scrolled {
-  background: #fff;
-  color: #000;
+  background: var(--light-color);
+  color: var(--dark-color);
 }
 
 .left {
@@ -27,11 +27,4 @@
   gap: 2em;
 }
 
-.right {
-  .cta {
-    background: #000;
-    color: #fff;
-    padding: .5em .75em;
-    border-radius: 100em;
-  }
-}
+.right {}
