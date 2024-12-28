@@ -6,12 +6,23 @@ const Hero = () => {
   return (
     <PaddedContainer containerClassName={styles.container}
       className={styles.content}>
-      <div>
-        <h2>Servus, mein Name ist Samy</h2>
-        <p>Ich bin Webdesigner aus München. <br /> Mein primäres Ziel beim Designen einer Website ist das Gewinnen des Vertrauens der Besucher für meine Kunden. Lass uns einen Termin vereinbaren, damit wir an Deiner Vision arbeiten können.</p>
-        <CTA />
+      <div className={styles.copy}>
+        <h2 className={styles.heading}>Webdesigner aus München</h2>
+
+        <div className={styles.paragraphContainer}>
+          <p className={styles.paragraph}>
+            Mit langjähriger Erfahrung in der Webentwicklung kombiniere ich kreative Gestaltung mit technischer Expertise, um benutzerfreundliche und funktionale Websites zu erstellen.
+          </p>
+
+          <p className={[styles.paragraph, styles.finalParagraph].join(" ")}>Lass uns einen Termin vereinbaren, damit wir an Deiner Vision arbeiten können.</p>
+        </div>
+
+        <CTA className={styles.cta}>Termin vereinbaren</CTA>
       </div>
-      <div></div>
+
+      <div className={styles.right}>
+        <span className={styles.img}>Image</span>
+      </div>
     </PaddedContainer>
   );
 };

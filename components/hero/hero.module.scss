@@ -1,3 +1,56 @@
-.container {}
+.container {
+  background: var(--bg-hero);
+}
 
-.content {}
+.content {
+  display: flex;
+  margin: 4.5em 3em;
+
+  &>* {
+    flex: 1;
+  }
+}
+
+.copy {
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+  flex: 1.1;
+}
+
+.heading {
+  font-size: 2.5rem;
+}
+
+.paragraphContainer {
+  margin-top: 1em;
+}
+
+.paragraph {
+  font-size: 1.125rem;
+  line-height: 1.6;
+
+  &:not(:first-child) {
+    margin-top: .25em;
+
+    &:last-child {
+      margin-top: .5em;
+    }
+  }
+}
+
+.cta {
+  margin-top: 1.25em;
+  border-radius: .5em;
+  font-size: 1.25rem;
+}
+
+.right {
+  display: flex;
+  justify-content: center;
+}
+
+.img {
+  aspect-ratio: .8;
+  background: black;
+}

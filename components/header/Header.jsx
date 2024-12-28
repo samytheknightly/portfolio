@@ -12,7 +12,7 @@ const Header = () => {
     <PaddedContainer containerClassName={[styles.container,
     scrollPos > 0 ? styles.scrolled : ""].join(" ")}
       className={styles.content}>
-      <Link className={styles.left} href="/">Samy Sabi Webdesign</Link>
+      <Link className={styles.left} href="/">Samy Sabi <span style={{ fontWeight: 400 }}>Webdesign</span></Link>
 
       <div className={styles.center}>
         <Link className={styles.centerLink} href="/dienstleistungen">Dienstleistungen</Link>
@@ -21,7 +21,7 @@ const Header = () => {
       </div>
 
       <div className={styles.right}>
-        <CTA />
+        <CTA className={styles.cta} />
       </div>
     </PaddedContainer>
   );

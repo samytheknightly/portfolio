@@ -1,8 +1,13 @@
 :root {
-  --dark-color: #020202;
-  --light-color: #fdfdfd;
+  --bg-base: #f2f2f2;
+  --bg-hero: #e0f7fa;
+  --bg-cta: #2e2e2e;
 
-  color: var(--black-text);
+  --text-base: #333333;
+  --text-cta: #f0f0f0;
+
+  color: var(--text-base);
+  background: var(--bg-base);
 }
 
 * {

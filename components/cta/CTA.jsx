@@ -1,10 +1,10 @@
 import Link from "next/link";
 import styles from "./cta.module.scss";
 
-const CTA = () => {
+const CTA = ({ className = "", children }) => {
   return (
-    <Link className={styles.container} href="/kontakt">
-      <span>Jetzt kontaktieren</span>
+    <Link className={[styles.container, className].join(" ")} href="/kontakt">
+      <span>{children || "Jetzt kontaktieren"}</span>
       <span className="right_arrow"></span>
     </Link>
   );

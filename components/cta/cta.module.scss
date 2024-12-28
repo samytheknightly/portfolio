@@ -1,6 +1,7 @@
 .container {
-  background: var(--dark-color);
-  color: var(--light-color);
-  padding: .5em .75em;
+  background: var(--bg-cta);
+  color: var(--text-cta);
+  padding: .6em 1em;
   border-radius: 100em;
+  font-weight: 500;
 }
