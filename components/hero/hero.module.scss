@@ -1,56 +1,59 @@
 .container {
+  // background: linear-gradient(var(--bg-hero) 70%, var(--bg-base) 100%);
   background: var(--bg-hero);
 }
 
 .content {
   display: flex;
-  margin: 4.5em 3em;
-
-  &>* {
-    flex: 1;
-  }
+  padding: 0 6em;
 }
 
 .copy {
   display: flex;
   flex-direction: column;
   align-items: start;
-  flex: 1.1;
+  padding: 4em 0;
+  flex: 1.25;
 }
 
 .heading {
-  font-size: 2.5rem;
+  font-size: 3rem;
 }
 
 .paragraphContainer {
-  margin-top: 1em;
+  margin-top: 1.5em;
+  width: 90%;
 }
 
 .paragraph {
-  font-size: 1.125rem;
+  font-size: 1.25rem;
   line-height: 1.6;
 
   &:not(:first-child) {
     margin-top: .25em;
-
-    &:last-child {
-      margin-top: .5em;
-    }
   }
 }
 
 .cta {
-  margin-top: 1.25em;
+  margin-top: 1em;
   border-radius: .5em;
   font-size: 1.25rem;
 }
 
-.right {
+.portraitWithBg {
+  flex: 1;
   display: flex;
-  justify-content: center;
+  flex-direction: column;
+  justify-content: end;
+  align-items: center;
 }
 
 .img {
-  aspect-ratio: .8;
-  background: black;
+  flex: .5;
+  width: auto;
+  height: auto;
+  background: url("/images/portrait-background.png");
+  background-position: center center;
+  background-size: 70%;
+  background-repeat: no-repeat;
 }
